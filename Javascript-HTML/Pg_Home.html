@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="id">
+    <html lang="id">
     <head>
         <meta charset="UTF-8">
-        <title>ya</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugas 4 - JavaScript</title>
     </head>
 
     <body>
-        <form>
-            <label for="nama">Nama:</label>
-            <input type="text" id="Nama" placeholder="Teks nama">
-            <br></br>
-            <label for="jlm">Jumlah pilihan:</label>
-            <input type="text" id="Jumlah Pilihan" placeholder="jlm">
-            <br></br>
-            <button>ok</button>
-        </form>
+        <script src="script.js"></script>
+        <div id="header">
+            <h2>Header Data Diri</h2>
+            <p>Nama: Mikael Deandra</p>
+            <p>NIM: 255314113</p>
+            <img src="Sample.jpeg" alt="Foto Mahasiswa" width="120">
+        </div>
+        <hr>
+
+        <div id="tahap1">
+            <label for="nama">Nama :</label><br>
+            <input type="text" id="nama"><br><br>
+
+            <label for="jml">Jumlah Pilihan :</label><br>
+            <input type="number" id="jml" min="1"><br><br>
+
+            <button id="btn1">OK</button>
+        </div>
+
+        <div id="tahap2" style="display: none;">
+            <br>
+            <div id="container-pilihan"></div>
+            <button id="btn2">OK</button>
+        </div>
+
+        <div id="tahap3" style="display: none;">
+            <br>
+            <label>Pilihan :</label><br>
+            <div id="container-radio"></div>
+            <br>
+            <button id="btn3">OK</button>
+        </div>
+
+        <div id="tahap4" style="display: none;">
+            <br>
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" placeholder="email@domain.com"><br><br>
+            <button id="btn4">OK</button>
+        </div>
+
+        <div id="tahap5" style="display: none;">
+            <br>
+            <hr>
+            <p id="hasil-akhir"></p>
+        </div>
     </body>
 </html>
