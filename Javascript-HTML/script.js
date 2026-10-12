@@ -111,9 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       let daftarPilihanTeks = semuaPilihan.join(", ");
-
       const teksHasil = `Hallo, nama saya ${nama}, email ${email} saya mempunyai sejumlah ${jumlahPilihan} pilihan yaitu ${daftarPilihanTeks}, dan saya memilih ${pilihanFinal}`;
-
       document.getElementById("hasil-akhir").innerText = teksHasil;
       tahap5.style.display = "block";
       btn4.disabled = true; 
